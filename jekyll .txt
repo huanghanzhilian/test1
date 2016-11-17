@@ -1,0 +1,40 @@
+http://blog.csdn.net/hwk_yellow/article/details/53187835 
+
+安装jekyll 3.0的版本呢
+ $ gem install jekyll -v '3.0'
+ 还有这也要安装
+$ gem install minima
+  gem uninstall minima
+
+$ gem install bundle
+  gem uninstall bundle
+
+ gem install bundler
+ gem uninstall bundler
+
+
+gem install pygments.rb --version "=0.5.0"
+gem uninstall pygments.rb --version "=0.5.2"
+
+gem install  jekyll-sitemap
+gem uninstall jekyll-sitemap
+
+
+安装成功以后，会在文件里面出现
+$ ls
+_config.yml  _posts/  _site/  about.md  css/  feed.xml  Gemfile  Gemfile.lock  index.html
+但是，当我们不小心删了里面的东西以后，还可以生成jekyll
+$ jekyll new blog
+后面的哪个blog是自己的文件夹
+进入这个文件夹
+$ cd blog
+$ jekyll serve
+就可以在本地运行了！打开 localhost:4000
+
+
+
+分页
+ 只需要在_config.yml里面加一句: gems: [jekyll-paginate]就ok了 
+
+
+gem install bundler

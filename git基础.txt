@@ -149,8 +149,19 @@ Feature∑÷÷ß
 $ git push origin gh-pages
 
 
-
-
+	git checkout dev
+	jekyll build
+	git add -A
+	git commit -m "update dev"
+rm -r cd g:/_site/*
+cp -r _site/ /cd g:/
+	git checkout master
+rm -r ./*
+cp -r cd g:/_site/* ./
+	git add -A
+	git commit -m "deploy blog"
+	git push origin master
+	git checkout dev
 
 
 

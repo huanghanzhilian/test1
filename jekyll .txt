@@ -29,6 +29,9 @@ $ jekyll new blog
 进入这个文件夹
 $ cd blog
 $ jekyll serve
+
+
+category plugin.rb 
 就可以在本地运行了！打开 localhost:4000
 
 
@@ -38,3 +41,6 @@ $ jekyll serve
 
 
 gem install bundler
+
+
+gem install category.rb 

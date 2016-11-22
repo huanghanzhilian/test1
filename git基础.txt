@@ -166,6 +166,23 @@ cp -r cd g:/_site/* ./
 
 
 
+	git checkout dev
+	jekyll build
+	git add -A
+	git commit -m "update dev"
+rm -r cd d:/_site/*
+cp -r _site/ /cd d:/
+	git checkout master
+rm -r ./*
+cp -r cd d:/_site/* ./
+	git add -A
+	git commit -m "deploy blog"
+	git push origin master
+	git checkout dev
+
+
+
+
 
 
 
